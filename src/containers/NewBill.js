@@ -22,6 +22,10 @@ export default class NewBill {
     const filePath = e.target.value.split(/\\/g)
     const fileName = filePath[filePath.length - 1]
 
+    //exemple of use chrome Debug -employee cession changefile
+    console.log(file.name)
+
+    
     //  Empêche l'utilisateur d'utiliser un fichier autre qu'un format png, jpeg, jpg.
     if (!/.(?:png|jpeg|jpg)/.test(file.name)) {
       this.document.getElementById("btn-send-bill").disabled = true;

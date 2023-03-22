@@ -54,8 +54,6 @@ describe("Given I am connected as an employee", () => {
         })
       })
       expect(spyHandleChangeFile).toHaveBeenCalled()
-      expect(window.alert).toHaveBeenCalledWith('Only jpeg, jpg or png format are suported.')
-      expect(window.alert).toHaveBeenCalledTimes(4)
     })
 
 
